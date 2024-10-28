@@ -17,17 +17,15 @@ def get_user_input():
     print(fsplit_list)
     return fsplit_list
 
-def calc_average():
-    print("calc_average")
-    return 0.0
+def calc_average(fsplit_list):
+    return sum(fsplit_list)/ len(fsplit_list)
 
-def find_min_max():
-    print("code here")
-    return [0.0,0.0]
+def find_min_max(fsplit_list):
+    return [min(fsplit_list), max(fsplit_list)]
+    
 
-def sort_temperature():
-    print("code here")
-    return []
+def sort_temperature(fsplit_list):
+    return sorted(fsplit_list)
 
 def calc_median_temperature(fsplit_list):
     fsplit_list.sort()
