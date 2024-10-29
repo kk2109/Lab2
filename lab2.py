@@ -29,21 +29,18 @@ def sort_temperature(fsplit_list):
 
 def calc_median_temperature(fsplit_list):
     fsplit_list.sort()
-    print(fsplit_list)
-
     n=len(fsplit_list)
 
     if n % 2 == 1:
         median=fsplit_list[n // 2]
-        print(median)
 
     else:
         pos1=fsplit_list[n // 2]
         pos2=fsplit_list[n // 2-1]
         median= (pos1+pos2)/2
-        print(median)
 
-    return 0.0
+
+    return median
 
 if __name__ == "__main__":
     main()
